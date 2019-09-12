@@ -24,10 +24,6 @@
 /*!
 // 1. Useful Mixins
 // --------------------------------------------------*/
-.partner-logo {
-  max-width: 25%;
-}
-
 .vertical-align {
   position: relative;
   top: 50%;
@@ -274,7 +270,7 @@ h6 {
 h1 {
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 42px;
+  margin-bottom: 35px;
 }
 h3 {
   font-size: 20px;
@@ -463,7 +459,7 @@ nav .logo {
   max-height: 45px;
   max-width: 110px;
   position: absolute;
-  top: -6px;
+  top: 0px;
   opacity: 1;
 }
 nav .text-right {
@@ -550,7 +546,7 @@ nav .container {
   opacity: 0;
   background: rgba(255, 255, 255, 0.9);
   min-width: 200px;
-  overflow: hidden;
+  overflow: visible;
   margin-top: -2px;
   -webkit-transition: all 0.3s;
 }
@@ -614,7 +610,7 @@ nav .container {
 .has-dropdown a {
   padding-left: 18px;
 }
-.has-dropdown:before {
+.menu > .has-dropdown:before {
   display: inline-block;
   font-family: 'Pe-icon-7-stroke';
   speak: none;
@@ -841,8 +837,6 @@ nav .container {
     display: block;
     margin-top: 67px;
     margin-right: 0px;
-    max-height: 75vh; 
-    overflow-y: scroll;
   }
   nav .social-link {
     float: left !important;
@@ -863,18 +857,13 @@ nav .container {
   .nav-dropdown {
     position: relative;
     display: none;
-    height: 600px; 
-    margin-top: 5px;
-    padding-bottom: 8px;
+    min-height: 600px;
  }
   .has-dropdown:hover .nav-dropdown {
     display: block;
   }
   .has-dropdown:before {
     color: #333333;
-  }
-  .nav-dropdown li {
-    padding-bottom: 9px !important;
   }
 }
 /*!
@@ -932,16 +921,9 @@ nav .container {
 }
 @media all and (max-width: 767px) {
   .hero-slider .btn-hollow {
-    display: inline-block;
+    display: none;
   }
 }
-
-@media all and (max-width: 480px) {
-  .hero-slider .btn-hollow {
-    margin: 5px auto auto auto;
-  }
-}
-
 .register-header form.register {
   padding-top: 0px;
   background: rgba(0, 0, 0, 0.4);
@@ -1303,7 +1285,7 @@ nav .container {
   background-color: #b82300;
   right: 0px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 991px) {
   .block-content {
     margin-bottom: 144px;
     overflow: hidden;
@@ -2079,15 +2061,15 @@ p.question {
 }
 .sponsor {
   margin-bottom: 36px;
-  height: 110px;
+  height: 80px;
   line-height: 80px;
 }
 .sponsor img {
-  max-width: 170px;
+  max-width: 150px;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  max-height: 100px;
+  max-height: 80px;
 }
 .sponsors span {
   display: inline-block;
