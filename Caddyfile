@@ -1,5 +1,0 @@
-localhost:8080
-
-browse
-ext .html
-log ./access.log
