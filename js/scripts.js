@@ -111,7 +111,7 @@ $(document).ready(function() {
     });
 
     /************** Instagram Feed **************/
-
+	/*
     jQuery.fn.spectragram.accessData = {
         accessToken: '1406933036.fedaafa.feec3d50f5194ce5b705a1f11a107e0b',
         clientID: 'fedaafacf224447e8aef74872d3820a1'
@@ -122,7 +122,7 @@ $(document).ready(function() {
             query: $(this).attr('data-user-name')
         });
     });
-
+	*/
     /************** Fullscreen Elements **************/
 
     $('.fullscreen-element').each(function() {
